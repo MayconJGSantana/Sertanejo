@@ -19,15 +19,16 @@
             }
 
             .historia-imagens {
-                height: 60vh;
+                display: flex;
+                justify-content: center;
+                height: 100vh;
                 width: 40%;
-                border: solid 2px black;
+                flex-direction: column;
             }
 
             .historia-textos {
                 display: flex;
-                border: solid 2px black;
-                height: 60vh;
+                height: 100vh;
                 width: 50%;
                 flex-direction: column;
                 
@@ -35,25 +36,49 @@
 
             .conteudo-historia {
                 display: flex;
-                border: solid 2px red;
-                min-height: 80vh;
+                min-height: 110vh;
                 width: 100%;
                 flex-direction: row;
-                align-items: center;
                 justify-content: space-around;
+                padding-top: 10px;
             }
 
 
             .historia-textos .texto {
-                border: solid 2px blue;
                 height: 40vh;
-                padding-left: 5px;
+                padding: 5px;
                 
             }
 
             main p {
-                font-size: 23px;
+                font-size: 22px;
                 overflow: hidden;
+            }
+
+            main .historia-textos span {
+                color: #8C1007;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .imagem {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50vh;
+            }
+
+            main .pic {
+                overflow: hidden;
+                height: 90%;
+                border: solid 6px #8C1007;
+                transition: all 0.5s ease;
+
+            }
+
+            main .pic:hover {
+                border: solid 6px #3E0703;
+                scale: 1.005;
             }
 
         </style>
@@ -131,22 +156,41 @@
 
                 <div class="container">
 
-                    <div class="conteudo-historia">
-                        <div class="historia-imagens">
+                    <h1>SOBRE MIM</h1>
 
+                    <div class="conteudo-historia">
+
+                        <div class="historia-imagens">
+                            <div class="imagem">
+                                <img class="pic" src="../fotos/nicoModaoSelfie.png" alt="">
+                            </div>
+                            <div class="imagem">
+                                <img class="pic" src="../fotos/nicoNoCavalo.png" alt="">
+                            </div>
                         </div>
+
+                        
 
 
                         <div class="historia-textos">
                             <div class="texto">
                                 <h2>Sua origem</h2>
-                                <p>Antes de virar cantor, Nico Modão era conhecido como o “cowboy dos códigos”. Passava noites tentando compilar programas que nunca rodavam. Seu maior inimigo? O bug misterioso que aparecia sempre na hora da entrega.</p>
+                                <p>Antes de virar cantor, Nico Modão era conhecido como o <span>cowboy dos códigos</span>. Passava noites tentando compilar programas que nunca rodavam. Seu maior inimigo? O bug misterioso que aparecia sempre na hora da entrega.</p>
+                                <p>Certa vez, depois de 6 horas olhando para a tela e tomando café frio, Nico perdeu a paciência. Jogou o teclado de lado, pegou o violão e improvisou seu primeiro modão: <span>"PHP no meu cavalo..."</span>
+                                </p>
                             </div>
                             <div class="texto">
-                                <h2>Bab</h2>
-
+                                <h2>Início da fama</h2>
+                                <p>Depois do sucesso “PHP no meu cavalo”, Nico Modão começou a levar o violão para as aulas de programação. O auditório virou palco, e os trabalhos em grupo ganharam trilha sonora própria. A cada erro de sintaxe, nascia uma nova canção. Com o tempo, Nico percebeu que estava criando um novo gênero: o <span>Sertanejo Computacional</span>. Não falava de boiadeiro no campo, mas de programador na madrugada. </p>
+                            </div>
+                            <div class="texto">
+                                <h2>Atualmente</h2>
+                                <p>Hoje em dia, Nico Modão é referência não apenas no sertanejo, mas sim na música nacional. Os fãs se autodenominam <span>Debuggers do Modão</span> e alguns até vão aos shows vestidos de cowboy… mas com jaquetas estampadas de código fonte.
+                                <p>Apesar da fama crescente, Nico nunca esqueceu suas origens. Sempre repetia nos shows:
+                                “Se hoje canto para multidões, é porque um dia chorei sozinho diante de um bug que ninguém entendia. Esse bug me derrubou… mas também me levantou.”</p>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
