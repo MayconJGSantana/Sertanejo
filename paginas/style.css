@@ -157,7 +157,7 @@ header .redes-sociais i {
 main {
 
     width: 100%;
-    height: 80vh;
+    flex: 1;
     background-color: #FFF0C4;
         
 }
