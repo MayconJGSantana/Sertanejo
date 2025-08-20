@@ -8,6 +8,83 @@
         <title>Discografia | Niko Modão</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="/fotos/favicon.png" type="image/png">
+        <style>
+            main .conteudo-discografia {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main .caixa-album {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30vh;
+                width: 100%;
+                
+            }
+
+            .caixa-album .album {
+                display: flex;
+                flex-direction: row;
+                height: 60%;
+                width: 90%;
+                background-image: linear-gradient(180deg, #8C1007 10%, #660B05 100%);
+                border-radius: 15px;
+                transition: all 0.5s ease;
+            }
+
+            .caixa-album .album:hover {
+                background-image: linear-gradient(180deg, #660B05 20%, #3E0703 100%);
+                border-radius: 15px;
+            }
+
+            .album-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+            }
+
+            .album-info h2 {
+                font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                color: white;
+            }
+
+            .album-info h3 {
+                font-size: 25px;
+                color: white;
+            }
+
+            .album-audio {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                height: 100%;
+            }
+
+            .album-audio h3 {
+                font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                color: white;
+            }
+
+            .album-audio .audio {
+                display: flex;
+                width: 100%;
+                height: 50%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+        </style>
+
     </head>
 
     <body>
@@ -81,13 +158,91 @@
 
                 <div class="container">
                         
-                    <h1>Conteúdo principal</h1>
+                    <h1>MEUS ÁLBUNS</h1>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam.</p>
-                    
-                    <h1>Conteúdo principal</h1>
+                    <div class="conteudo-discografia">
+                        <div class="caixa-album">
+                            
+                            <div class="album">
+                                <div class="album-info">
+                                    <h2>Modão sem Bug</h2>
+                                    <h3>Nico Modão</h3>
+                                </div>
+                                <div class="album-audio">
+                                    <div class="audio">
+                                        <h3>PHP No Meu Cavalo</h3>
+                                        <audio controls>
+                                            <source src="../musicas/PHPnoMeuCavalo.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                    <div class="audio">
+                                        <h3>O Dia Que Te Conheci</h3>
+                                        <audio controls>
+                                            <source src="../musicas/OdiaQueTeConheci.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caixa-album">
+                            <div class="album">
+                                <div class="album-info">
+                                    <h2>Compilando Saudade</h2>
+                                    <h3>Nico Modão</h3>
+                                </div>
+                                <div class="album-audio">
+                                    <div class="audio">
+                                        <h3>Raiva Virou Canção</h3>
+                                        <audio controls>
+                                            <source src="../musicas/RaivaVirouCanção.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                    <div class="audio">
+                                        <h3>Código e Coração</h3>
+                                        <audio controls>
+                                            <source src="../musicas/CodigoECoracao.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caixa-album">
+                            <div class="album">
+                                <div class="album-info">
+                                    <h2>Tela Azul do Amor</h2>
+                                    <h3>Nico Modão</h3>
+                                </div>
+                                <div class="album-audio">
+                                    <div class="audio">
+                                        <h3>Coração em Desalinho</h3>
+                                        <audio controls>
+                                            <source src="../musicas/CoracaoEmDesalinho.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                    <div class="audio">
+                                        <h3>Amor em Python</h3>
+                                        <audio controls>
+                                            <source src="../musicas/CowboyDoCodigo.mp3" type="audio/mpeg">
+                                            <source src="musica.ogg" type="audio/ogg">
+                                            Seu navegador não suporta áudio.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam.</p>
+
 
                 </div>
                 
