@@ -1,0 +1,64 @@
+main {
+
+    height: 145vh;
+    
+}
+
+main h1 {
+    color: #660B05;
+    font-size: 80px;
+}
+/* Banner */
+
+.banner {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.banner img {
+    height: 300px;
+    width: 100vw;
+}
+
+/* Produtos */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    padding: 30px 45px;
+}
+
+.imagem {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    height: 300px;
+    width: 350px;
+}
+
+.imagem img {
+    transition: 0.8s;
+}
+
+.imagem img:hover {
+    scale: 1.1;
+}
+
+.titulo {
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+.preco {
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0px 5px;
+}
