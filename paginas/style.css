@@ -345,3 +345,71 @@ footer .container {
                 color: #FFF0C4;
                 
             }
+
+            /* eu adicionei */
+            .form-group {
+                font-family: "Ubuntu", sans-serif;
+            }
+            /* eu adicionei */
+
+            /* eu adicionei cmc aq */
+            .formu {
+                    max-width: 500px;
+                    width: 100%;
+                    margin: 40px auto;
+
+                }
+
+                form .form-group {
+                    margin-top: 15px;
+                }
+
+                input[type="text"],
+                input[type="date"],
+                input[type="email"],
+                input[type="file"],
+                input[type="number"],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #8C1007;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+
+                /* oq eu adicionei */
+                .letras-linha {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+                /* oq eu adicionei */
+
+                /* eu adiocionei */
+                .musicas-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px;
+                    margin: 20px 0;
+                }
+
+                .musica {
+                    flex: 1 1 45%;
+                    padding: 20px;
+                    font-family: "Ubuntu", sans-serif;
+
+                }
+                /* eu adicionei */
