@@ -33,31 +33,27 @@
                 width: 90%;
                 background-image: linear-gradient(180deg, #8C1007 10%, #660B05 100%);
                 border-radius: 15px;
-                transition: all 0.5s ease;
+                transition: filter 0.2s ease;
             }
 
             .caixa-album .album:hover {
-                background-image: linear-gradient(180deg, #660B05 20%, #3E0703 100%);
-                border-radius: 15px;
+                filter: brightness(0.8);
             }
 
             .album-info {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 width: 50%;
                 height: 100%;
             }
 
             .album-info h2 {
                 font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
-                font-size: 40px;
+                font-size: 28px;
                 color: white;
             }
 
             .album-info h3 {
-                font-size: 25px;
+                font-size: 20px;
                 color: white;
             }
 
@@ -81,6 +77,27 @@
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
+            }
+            
+            .album-info2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+                border: solid 2px blue;
+            }
+
+            .album-info1 {
+                display: flex;
+                 width: 50%;
+                height: 100%;
+                border: solid 2px blue;
+            }
+
+            .imagem-album {
+                height: 100%;
             }
 
         </style>
@@ -165,8 +182,13 @@
                             
                             <div class="album">
                                 <div class="album-info">
-                                    <h2>Modão sem Bug</h2>
-                                    <h3>Nico Modão</h3>
+                                    <div class="album-info1">
+
+                                    </div>
+                                    <div class="album-info2">
+                                        <h2>Modão sem Bug</h2>
+                                        <h3>Nico Modão</h3>
+                                    </div>
                                 </div>
                                 <div class="album-audio">
                                     <div class="audio">
@@ -191,8 +213,13 @@
                         <div class="caixa-album">
                             <div class="album">
                                 <div class="album-info">
-                                    <h2>Compilando Saudade</h2>
-                                    <h3>Nico Modão</h3>
+                                    <div class="album-info1">
+
+                                    </div>
+                                    <div class="album-info2">
+                                        <h2>Compilando Saudade</h2>
+                                        <h3>Nico Modão</h3>
+                                    </div>
                                 </div>
                                 <div class="album-audio">
                                     <div class="audio">
@@ -217,8 +244,13 @@
                         <div class="caixa-album">
                             <div class="album">
                                 <div class="album-info">
-                                    <h2>Tela Azul do Amor</h2>
-                                    <h3>Nico Modão</h3>
+                                    <div class="album-info1">
+
+                                    </div>
+                                    <div class="album-info2">
+                                        <h2>Tela Azul do Amor</h2>
+                                        <h3>Nico Modão</h3>
+                                    </div>
                                 </div>
                                 <div class="album-audio">
                                     <div class="audio">

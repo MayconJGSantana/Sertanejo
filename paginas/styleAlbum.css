@@ -1,0 +1,71 @@
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.carousel {
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel::scroll-button(right){
+    content: '>';
+    border: none;
+    background-color: #3E0703;
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transition: 0.5s;
+}
+
+.carousel::scroll-button(right):hover{
+    background-color: #8C1007;
+}
+
+.carousel::scroll-button(left){
+    content: '<';
+    border: none;
+    background-color: #3E0703;
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transition: 0.5s;
+}
+
+.carousel::scroll-button(left):hover{
+    background-color: #8C1007;
+}
+
+.card {
+    scroll-snap-align: start;
+    flex: 0 0 135vh;
+    height: 50vh;
+    background-color: #e7dab1b0;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+}

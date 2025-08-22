@@ -35,24 +35,31 @@ main h1 {
     justify-content: center;
     height: 300px;
     width: 350px;
+    background-color: #e7dab1b0;
 }
 
-.imagem img {
-    transition: 0.8s;
+.produto:hover .titulo{
+    text-decoration: underline;
 }
 
-.imagem img:hover {
+.produto .imagem img{
+    transition: 1s;
+}
+
+.produto:hover .imagem img{
     scale: 1.1;
 }
-
 .titulo {
     font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 3px 5px;
     font-weight: bold;
+    transition: 1.5s;
+    color: black;
 }
 .preco {
     font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 0px 5px;
+    color: black;
 }
