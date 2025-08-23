@@ -6,8 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agenda | Niko Modão</title>
+
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleAgenda.css">
         <link rel="icon" href="/fotos/favicon.png" type="image/png">
+
     </head>
 
     <body>
@@ -77,17 +80,181 @@
             </div>
 
             
-            <main>
+            <main id="corpo-site">
 
                 <div class="container">
                         
-                    <h1>Conteúdo principal</h1>
+                    <div class="agenda">
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam.</p>
-                    
-                    <h1>Conteúdo principal</h1>
+                        <div class="coluna">
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit impedit labore mollitia quo quia fuga sit voluptas et necessitatibus quos, ex tempore animi omnis officia ea consequatur ad illum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique quas, quos quam fuga quae dolor velit, tenetur eos iure necessitatibus, optio commodi molestiae explicabo voluptas aliquid earum asperiores. Ipsam.</p>
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+                                        
+                                        Domingo
+
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Segunda
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Terça
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Quarta
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Quinta
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Sexta
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                        <div class="coluna">
+
+                            <div class="nome">
+
+                                <div class="fundo">
+
+                                    <p>
+
+                                        Sábado
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            <div class="dia"></div>
+                            
+                        </div>
+
+                    </div>
 
                 </div>
                 
@@ -183,6 +350,26 @@
             </footer>
 
         </div>
+
+        <script>
+
+            // Vai pegar o valor atual da largura do main
+
+            function atualizaLargura() {
+
+                document.documentElement.style.setProperty("--largura-main", document.getElementById("corpo-site").offsetWidth);
+
+                console.log(document.getElementById("corpo-site").offsetWidth);
+                console.log((10 *100) / document.getElementById("corpo-site").offsetWidth);
+
+            }
+
+            // Qual a página recarrega ele pega de novo a altura, porque talvez tenha mudado, o mesmo para quando alguém minimizar ou mudar o tamanho da aba do navegador
+            
+            window.addEventListener("load", atualizaLargura);
+            window.addEventListener("resize", atualizaLargura);
+
+        </script>
 
     </body>
 
