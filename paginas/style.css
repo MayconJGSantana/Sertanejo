@@ -26,7 +26,7 @@
     
     width: 70vw;
     margin: 0 auto;
-
+    
 }
 
 
@@ -160,7 +160,7 @@ main {
     flex: 1;
     min-height: 60vh;
     background-color: #FFF0C4;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
     
 }
 
