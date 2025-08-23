@@ -1,17 +1,20 @@
 img {
     height: 100%;
     width: 100%;
-    border-radius: 15px;
 }
 .carousel {
     margin: 50px auto;
     display: flex;
     gap: 20px;
     width: 100%;
+    height: 75vh;
     overflow-x: auto;
     scroll-behavior: smooth;
     position: relative;
     scroll-snap-type: x mandatory;
+    border: solid black 1.5px;
+    border-radius: 15px;
+    background-color: #e7dab1b0;
 }
 
 .carousel::-webkit-scrollbar {
@@ -65,8 +68,14 @@ img {
     scroll-snap-align: start;
     flex: 0 0 100%;
     height: 70vh;
-    background-color: #e7dab1b0;
     text-align: center;
     align-items: center;
-    border-radius: 15px;
+    flex-direction: column;
+}
+
+.card p {
+    padding: 10px 0px;
+    font-weight: bold;
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
