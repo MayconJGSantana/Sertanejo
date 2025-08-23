@@ -10,7 +10,7 @@
 }
 form {
     display: grid; 
-    /* propriedade que transforma um elemento em um container de grade permitindo organizar os filhos em linhas e colunas com flexibilidade. Boa pra laioute*/
+    /* propriedade que transforma um elemento em um container de grade permitindo organizar os filhos em linhas e colunas com flexibilidade. Boa pra laioute.*/
     gap: 20px;
     padding-top: 20px;
 }
