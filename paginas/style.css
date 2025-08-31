@@ -168,10 +168,12 @@ main h1 {
         
     font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
     font-size: 55px;
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     color: black;
     padding: 20px 0px;
+      display: inline-block;
+    width: max-content;
 
 }
 
