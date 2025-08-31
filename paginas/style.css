@@ -177,6 +177,18 @@ main h1 {
 
 }
 
+.musicas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+}
+
+
+.musica {
+    flex: 1 1 calc(50% - 40px); 
+    box-sizing: border-box;
+}
+
 
 /* Rodapé */
 
