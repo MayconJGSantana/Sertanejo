@@ -837,39 +837,6 @@
 
         </div>
 
-        <script>
-
-            function defineAgenda() {
-
-                hoje = new Date();
-
-                ultimoDia = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0); /* Vai pedir o dia zero do próximo mês, que seria o último dia do mês atual */
-                ultimoDia = ultimoDia.getDate();
-
-                diaSemana = new Date(hoje.getFullYear(), hoje.getMonth(), 1); /* Vai pedir o dia da semana do primeiro dia desse mês */
-                diaSemana = diaSemana.getDay();
-
-                for (i = 0; i < diaSemana; i++) {
-
-                    document.querySelectorAll(".dia")[i].style.display = "none";
-                    
-                }
-                
-                for (i = 0; i < document.querySelectorAll(".dia").length; i++) {
-
-                    document.querySelectorAll(".dia")[i].style.backgroundColor = "blue";
-                    
-                }
-
-                // document.querySelectorAll(".dia")[mes.getDay()].style.backgroundColor = "blue";
-                document.querySelectorAll(".dia")[diaSemana].style.marginLeft = `${((document.querySelector(".agenda").offsetWidth / 7) * diaSemana)}px`;
-                
-                return ultimoDia.value;
-
-            }
-
-        </script>
-
     </body>
 
     </html>
