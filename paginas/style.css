@@ -230,7 +230,6 @@ main h1 {
         
     font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
     font-size: 55px;
-    text-align: center;
     color: black;
 
 }
@@ -262,7 +261,6 @@ main .caixa-titulo {
             border-radius: 5px;
 
         }
-
 
 /* Rodapé */
 
