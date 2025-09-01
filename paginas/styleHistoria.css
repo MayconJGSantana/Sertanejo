@@ -1,0 +1,71 @@
+main h2 {
+    font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    text-decoration: underline;
+    color: black;
+    padding: 20px 0px;
+}
+
+.historia-imagens {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 40%;
+    flex-direction: column;
+}
+
+.historia-textos {
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    
+}
+
+.conteudo-historia {
+    display: flex;
+    min-height: 110vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+
+.historia-textos .texto {
+    height: 40vh;
+    padding: 5px;
+    
+}
+
+main p {
+    font-size: 22px;
+    overflow: hidden;
+}
+
+main .historia-textos span {
+    color: #8C1007;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+main .pic {
+    overflow: hidden;
+    height: 90%;
+    border: solid 6px #8C1007;
+    transition: all 0.5s ease;
+
+}
+
+main .pic:hover {
+    border: solid 6px #3E0703;
+    scale: 1.005;
+}

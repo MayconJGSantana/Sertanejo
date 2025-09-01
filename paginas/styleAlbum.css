@@ -4,6 +4,7 @@ img {
     border-radius: 15px;
 }
 .carousel {
+
     margin: 50px auto;
     display: flex;
     gap: 20px;
@@ -12,6 +13,7 @@ img {
     scroll-behavior: smooth;
     position: relative;
     scroll-snap-type: x mandatory;
+
 }
 
 .carousel::-webkit-scrollbar {
@@ -19,6 +21,7 @@ img {
 }
 
 .carousel::scroll-button(right){
+
     content: '>';
     border: none;
     background-color: #3E0703;
@@ -33,6 +36,7 @@ img {
     top: 70%;
     right: 15%;
     transition: 0.5s;
+
 }
 
 .carousel::scroll-button(right):hover{

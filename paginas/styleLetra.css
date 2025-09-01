@@ -1,0 +1,22 @@
+.letras-linha {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .musicas-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .musica {
+        display: flex;
+        flex-direction: column;
+        
+        font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
+
+    }

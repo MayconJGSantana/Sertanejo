@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+:root {
+
+    --largura-main: 1905;
+
+}
 
 main {
 
@@ -14,31 +20,33 @@ main {
 
     .agenda {
 
-        display: flex;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
 
-
+        display: flex;
+        flex-direction: column;
 
     }
 
-        .agenda .coluna {
+        .agenda .nomes {
 
-            height: 100%;
-            width: calc(100%/7);
+            height: 7.5%;
+            width: 100%;
+
+            display: flex;
 
         }
 
-            .agenda .coluna .nome {
-
-                height: 7.5%;
-                width: 100%;
+            .agenda .nomes .nome {
                 
+                width: calc(100% / 7);
+                height: 100%;
+
                 padding: calc((5 * 100vw) / var(--largura-main));
 
             }
 
-                .agenda .coluna .nome .fundo {
+                .agenda .nomes .nome .fundo {
 
                     width: 100%;
                     height: 100%;
@@ -48,15 +56,15 @@ main {
                     align-items: center;
                     justify-content: center;
 
-                    background-color: #FFD700;
-                    border: 1px solid gray;
+                    background-color: #b997018e;
+                    border: 1px solid rgb(197, 197, 197);
                     
 
                 }
 
-                    .agenda .coluna .nome .fundo p {
+                    .agenda .nomes .fundo p {
 
-                        font-family: "Pacifico", Arial, Helvetica, sans-serif;
+                        font-family: "Mozilla Headline", Arial, Helvetica, sans-serif;
                         font-size: calc((30 * 100vw) / var(--largura-main));
                         color: whitesmoke;
                         text-shadow: 2px 0px 5px black; /* Utilizado para colocar uma sombra na letra de texto, sintaxe: <deslocamento-direta> <deslocamento-esquerda> <desfoque> <cor> */
@@ -64,11 +72,74 @@ main {
 
                     }
 
-            .agenda .coluna .dia {
+        .agenda .dias {
+
+            width: 100%;
+            height: calc(100% - 7.5%);
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+            .agenda .dias .dia {
                 
-                border: 1px solid black;
-                height: calc((100% - 7.5%) / 5);
-                background-color: green ;
-                width: 100%;
+                height: calc(100% / 6);
+                width: calc(100% / 7);
+
+                padding: 5px;
+
+                border: 1px solid white;
+                background-color: #A0402C;
 
             }
+
+            .transparente {
+
+                border: none !important;
+                background-color: transparent !important;
+                
+            }
+
+                .agenda .dias .dia ul {
+
+                    padding-left: 5px;
+
+                }
+
+                    .agenda .dias .dia ul li {
+
+                        margin-bottom: 7.5px;
+
+                        list-style: circle;
+                        list-style-position: inside;
+
+                        color: #FFF0B5;
+
+                        font-size: calc((16 * 100vw) / var(--largura-main));
+
+                    }
+
+                    .agenda .dias .dia ul li:hover {
+
+                        filter: brightness(0.8);
+
+                    }
+
+                .agenda .dias .dia .data {
+
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    width: 100%;
+
+                }
+
+                    .agenda .dias .dia .data p {
+
+                        font-size: calc((30 * 100vw) / var(--largura-main));
+
+                        color: white;
+                        
+                    }

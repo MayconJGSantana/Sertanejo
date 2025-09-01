@@ -2,19 +2,6 @@ main h1 {
     color: #660B05;
     font-size: 80px;
 }
-/* Banner */
-
-.banner {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.banner img {
-    height: 300px;
-    width: 100vw;
-}
 
 /* Produtos */
 

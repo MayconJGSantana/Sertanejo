@@ -1,0 +1,355 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+
+    --largura-main: 1905;
+
+}
+
+.secao-novidades {
+
+    width: 100%;
+
+    display: flex;
+
+    margin: 5vw 0;
+
+}
+
+    .secao-novidades .container {
+
+        display: flex;
+        
+    }
+        .secao-novidades .container .novidades {
+
+            width: 100%;
+
+            display: flex;
+
+            margin-bottom: 5vw;
+
+            padding: 10px;
+
+            gap: 10px;
+
+
+        }
+
+            .secao-novidades .container .novidades .novidade {
+
+                display: flex;
+                flex-direction: column;
+
+                border-radius: 30px;
+
+                background-color: #8C1007;
+
+                overflow: hidden;
+
+            }
+
+                .secao-novidades .container .novidades .novidade img {
+
+                    width: 100%;
+                    height: 250px;
+
+                }
+
+                .secao-novidades .container .novidades .novidade .data {
+
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px 5px;
+
+                }
+                
+                    .secao-novidades .container .novidades .novidade .data p {
+
+                        display: flex;
+                        gap: 5px;
+
+                        color: white;
+
+                    }
+            
+                .secao-novidades .container .novidades .novidade .texto {
+
+                    width: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    flex: 1 1;
+
+                    padding: 15px 30px;
+
+
+                }         
+                
+                    .secao-novidades .container .novidades .novidade .texto p {
+                    
+                        color: white;
+
+                        text-align: justify;
+
+                    }
+
+                .secao-novidades .container .novidades .novidade .botao {
+
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+
+                    padding: 10px;
+
+                }
+
+                    .secao-novidades .container .novidades .novidade .botao a {
+
+                        background-color: antiquewhite;
+                        padding: 10px 50px;
+                        border: 1px solid black;
+
+                    }
+
+.secao-slogan {
+
+    width: 100%;
+
+    display: flex;
+
+    margin: 5vw 0;
+
+}
+
+    .secao-slogan .container {
+
+        display: flex;
+
+    }
+
+        .secao-slogan .container .slogan {
+
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        
+            .secao-slogan .container .slogan {
+
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border: 1px solid black;
+                
+                border-radius: 20px;
+                
+                padding: 40px;
+
+            }
+            
+                .secao-slogan .container .slogan .frase {
+
+                    font-size: calc((150 * 100vw) / var(--largura-main));
+
+                }
+                
+                    .secao-slogan .container .slogan .frase i {
+
+                        font-size: calc((100 * 100vw) / var(--largura-main));
+
+                    }
+
+                #autor-frase {
+
+                    width: 100%;
+
+                    display: flex;
+
+                    justify-content: end;
+
+                }
+
+                #autor-frase p {
+
+                    font-size: calc((50 * 100vw) / var(--largura-main));
+                    
+                }
+
+.caixa-musica {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 5vh;
+
+}
+
+    .caixa-musica .musica {
+        
+        display: flex;
+        height: 24vh;
+        width: 60%;
+        background-image: linear-gradient(180deg, #8C1007 10%, #660B05 100%);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .conteudo-fim {
+
+        justify-content: end;
+
+    }
+
+        .caixa-musica .musica .imagem-musica {
+
+            height: 100%;
+            width: 30%;
+
+            border-right: 1px solid grey;
+
+        }
+
+            .caixa-musica .musica .imagem-musica img {
+
+                width: 100%;
+                height: 100%;
+                
+            }
+
+        .caixa-musica .musica .informacoes {
+
+            flex: 1 1;
+
+            padding: 5px;
+
+            color: #FFF0C4;
+
+        }
+
+            .caixa-musica .musica .informacoes h2 {
+        
+                font-size: calc((30 * 100vw) / var(--largura-main));
+                margin-bottom: 1%;
+
+            }
+
+            .caixa-musica .musica .informacoes p {
+        
+                font-size: calc((16 * 100vw) / var(--largura-main));
+                margin-bottom: calc((20 * 100vw) / var(--largura-main));
+                padding-left: calc((40 * 100vw) / var(--largura-main));
+
+            }
+
+                .caixa-musica .musica .informacoes .redes-sociais ul {
+            
+                    margin-bottom: calc((20 * 100vw) / var(--largura-main));
+
+                    justify-content: center;
+
+                    gap: calc((70 * 100vw) / var(--largura-main));
+
+                }
+
+                        .caixa-musica .musica .informacoes .redes-sociais ul li a i {
+
+                            font-size: calc((50 * 100vw) / var(--largura-main));
+                            
+                        }
+
+                        .caixa-musica .musica .informacoes .redes-sociais ul li a i:hover {
+
+                            color: #3E0703;
+                            
+                        }
+
+            .caixa-musica .musica .informacoes .caixa-botao {
+
+                width: 100%;
+
+                display: flex;
+
+                justify-content: center;
+
+            }
+
+                .caixa-musica .musica .informacoes .caixa-botao .botao {
+
+                    width: 100%;
+                    height: 100%;
+
+                    padding-left: calc((30 * 100vw) / var(--largura-main));
+                    padding-right: calc((30 * 100vw) / var(--largura-main));
+                    padding-bottom: calc((10 * 100vw) / var(--largura-main));
+                    padding-top: calc((10 * 100vw) / var(--largura-main));
+
+                    text-align: center;
+
+                    border-radius: 20px;
+
+                    background-color: #FFF0C4;
+
+                }
+
+                .caixa-musica .musica .informacoes .caixa-botao .botao:hover {
+
+                    filter: brightness(0.8);
+
+                }
+
+                    .caixa-musica .musica .informacoes .caixa-botao a {
+                       
+                        width: 50%;
+                        
+
+                    }
+
+#secao-inscricao {
+
+    display: flex;
+
+}
+
+        #inscricao {
+
+            display: flex;
+
+            padding: 20px;
+
+            background-color: bisque;
+
+        }
+
+            #descricao {
+
+                width: 25%;
+
+            }
+                #descricao p {
+
+
+                    font-size: 25px;
+
+                }
+
+            #form-inscricao {
+
+                display: flex;
+                flex-direction: row;
+                flex: 1 1;  
+                
+                gap: 20px;
+
+                justify-content: center;
+                
+            }
